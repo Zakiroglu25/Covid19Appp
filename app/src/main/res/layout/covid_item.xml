@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/line"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/Country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#252CD3"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/olk" />
+
+        <TextView
+            android:id="@+id/NewConfirmed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#FD7203"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/NewDeaths"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#990CC1"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/olenyeni" />
+
+        <TextView
+            android:id="@+id/TotalConfirmed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#EF0000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cem" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Yeni Yoluxanlar"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/NewConfirmed"
+            app:layout_constraintTop_toBottomOf="@+id/Country" />
+
+        <TextView
+            android:id="@+id/olk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Ölkələr"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/Country"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cəmi Yoluxanlar"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/TotalConfirmed"
+            app:layout_constraintTop_toBottomOf="@+id/NewConfirmed" />
+
+        <TextView
+            android:id="@+id/olenyeni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Yeni Ölənlər"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/NewDeaths"
+            app:layout_constraintTop_toBottomOf="@+id/TotalConfirmed" />
+
+        <TextView
+            android:id="@+id/olecem"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cəmi Ölənlər"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/TotalDeaths"
+            app:layout_constraintTop_toBottomOf="@+id/NewDeaths" />
+
+        <TextView
+            android:id="@+id/lebe"
+            android:layout_width="73dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="8dp"
+            android:text="Yeni sağalanlar"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/NewRecovered"
+            app:layout_constraintTop_toBottomOf="@+id/TotalDeaths" />
+
+        <TextView
+            android:id="@+id/lebe2"
+            android:layout_width="73dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="4dp"
+            android:text="Cəmi sağalanlar"
+            android:textColor="#000"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/TotalRecovered"
+            app:layout_constraintTop_toBottomOf="@+id/NewRecovered" />
+
+        <TextView
+            android:id="@+id/TotalDeaths"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/olecem" />
+
+        <TextView
+            android:id="@+id/NewRecovered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            android:textColor="#2CD510"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lebe" />
+
+        <TextView
+            android:id="@+id/TotalRecovered"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="TextView"
+            android:textColor="#2CD510"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lebe2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
